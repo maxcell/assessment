@@ -15,21 +15,31 @@ and educators.
 
 ## Development Goals
 
-Here is a list of particular components that come to mind that will be
-useful to have right out of the gate:
+To keep the scope smaller, we will primarily be focusing on one particular
+component first. There are a lot of opportunities to cover depth with it
+and provide utility for a consumer:
 
-1. Flashcards
-  - Definition: A set of cards that have a front and back. Typically,
-  should start with the front side shown and then the reader should
-  determine the back's information. After finishing one card, it should
-  be set aside and then move to the next card till through the entire deck.
-2. Quiz
-  - Definition: a test of knowledge. These can come in more than a single
-  format, sometimes this would be a singular question or multiple. The
-  question format can be a single choice option, mutliple choice, or
-  fill-in-the-blank.
+### Flashcards
 
-In any tool used, there must be a way to reset the assessment to the beginning.
+Definition: A set of cards that have a front and back. Typically,
+should start with the front side shown and then the reader should
+determine the back's information. After finishing one card, it should
+be set aside and then move to the next card till through the entire deck.
+
+### Outside of MVP
+
+#### Quiz
+
+Definition: a test of knowledge. These can come in more than a single
+format, sometimes this would be a singular question or multiple. The
+question format can be a single choice option, mutliple choice, or
+fill-in-the-blank.
+
+### Structure/Release
+
+This project will take on the monorepo approach so that it allows for
+different components to be broken into their own libraries. This also
+allows for consumers to take in only what matters to them.
 
 Since this is a library we will need to make sure we organize the project
 in a way that supports being added as a dependency and should prioritize
